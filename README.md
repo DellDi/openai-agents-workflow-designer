@@ -1,15 +1,65 @@
-# OpenAI Agents 可视化工作流设计器
+# OpenAI Agents 工作流设计器
 
-这是一个基于Web的可视化工作流设计工具，允许用户通过拖放的方式创建OpenAI Agents SDK工作流，然后生成对应的Python代码。
+一个可视化工具，帮助用户设计、配置和生成基于OpenAI Assistants API的多代理工作流系统。
 
-## 🚀 功能特点
+![版本](https://img.shields.io/badge/版本-1.0.0-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue.svg)
+![React](https://img.shields.io/badge/React-18.2-61dafb.svg)
+![Vite](https://img.shields.io/badge/Vite-4.5-747bff.svg)
 
-- 拖放式组件设计界面
-- 可视化连接节点建立关系
-- 配置节点参数属性
-- 自动生成OpenAI Agents SDK代码
-- 支持Agent、Runner、Function Tool和Guardrail节点类型
-- 高亮显示生成的Python代码
+## ✨ 功能特点
+
+- 🧩 **拖拽式界面**: 基于React Flow构建的直观拖拽式界面
+- 🤖 **多节点类型**: 支持Agent、Runner、Function Tool和Guardrail四种节点类型
+- 🔗 **智能连接验证**: 内置节点连接规则验证，确保工作流逻辑合理
+- 📝 **动态配置面板**: 根据节点类型提供不同的配置选项
+- 📊 **可视化编辑**: 节点展开/折叠功能，提高工作区利用率
+- 💻 **代码生成**: 自动生成可执行的OpenAI Assistants API代码
+- 🚀 **快速开始模板**: 提供预设模板快速创建常见工作流
+
+## 🚀 开始使用
+
+### 安装依赖
+
+```bash
+pnpm install
+```
+
+### 启动开发服务器
+
+```bash
+pnpm dev
+```
+
+### 构建生产版本
+
+```bash
+pnpm build
+```
+
+## 💡 使用指南
+
+1. 从左侧侧边栏拖动节点到画布上
+2. 配置节点属性（名称、说明、参数等）
+3. 连接节点，创建工作流
+4. 点击"生成代码"按钮，获取可执行的API代码
+
+## 🔧 技术栈
+
+- React + TypeScript
+- React Flow (流程图可视化)
+- Ant Design (UI组件)
+- Zustand (状态管理)
+- Monaco Editor (代码编辑器)
+- Tailwind CSS (样式)
+
+## 📝 更新日志
+
+请参阅[CHANGELOG.md](./CHANGELOG.md)了解详细的版本更新历史。
+
+## 📄 许可证
+
+MIT
 
 ## 📋 技术栈
 
