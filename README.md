@@ -2,7 +2,6 @@
 
 一个可视化工具，帮助用户设计、配置和生成基于OpenAI Assistants API的多代理工作流系统。
 
-openai-agents、typescript、react、vite、ant design、react flow、zustand、monaco editor、tailwind css
 
 ![版本](https://img.shields.io/badge/版本-1.0.0-blue.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue.svg)
