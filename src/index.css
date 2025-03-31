@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-agent: #3498db;
+  --color-runner: #e74c3c;
+  --color-function-tool: #f39c12;
+  --color-guardrail: #9b59b6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.react-flow__node {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+  font-size: 12px;
+  width: 200px;
+}
+
+.react-flow__node-agent {
+  border-top: 3px solid var(--color-agent);
+}
+
+.react-flow__node-runner {
+  border-top: 3px solid var(--color-runner);
+}
+
+.react-flow__node-functionTool {
+  border-top: 3px solid var(--color-function-tool);
+}
+
+.react-flow__node-guardrail {
+  border-top: 3px solid var(--color-guardrail);
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+}
+
+.nodrag {
+  pointer-events: none;
+}
+
+.nowheel {
+  pointer-events: none;
+}
